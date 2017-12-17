@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171217222627) do
+ActiveRecord::Schema.define(version: 20171217225508) do
 
   create_table "clientes", force: :cascade do |t|
     t.string   "nome"
@@ -24,6 +24,39 @@ ActiveRecord::Schema.define(version: 20171217222627) do
     t.string   "razao_social"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+  end
+
+  create_table "contas_pagar", force: :cascade do |t|
+    t.integer  "id_cliente"
+    t.decimal  "valor"
+    t.date     "data"
+    t.date     "vencimento"
+    t.string   "obs"
+    t.date     "data_pago"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contas_receber", force: :cascade do |t|
+    t.integer  "id_fornecedor"
+    t.decimal  "valor"
+    t.date     "data"
+    t.date     "vencimento"
+    t.string   "obs"
+    t.date     "data_pago"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "contas_receberes", force: :cascade do |t|
+    t.integer  "id_fornecedor"
+    t.decimal  "valor"
+    t.date     "data"
+    t.date     "vencimento"
+    t.string   "obs"
+    t.date     "data_pago"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "fornecedores", force: :cascade do |t|

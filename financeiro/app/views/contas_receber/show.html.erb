@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id fornecedor:</strong>
+  <%= @contas_receber.id_fornecedor %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @contas_receber.valor %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @contas_receber.data %>
+</p>
+
+<p>
+  <strong>Vencimento:</strong>
+  <%= @contas_receber.vencimento %>
+</p>
+
+<p>
+  <strong>Obs:</strong>
+  <%= @contas_receber.obs %>
+</p>
+
+<p>
+  <strong>Data pago:</strong>
+  <%= @contas_receber.data_pago %>
+</p>
+
+<%= link_to 'Edit', edit_contas_receber_path(@contas_receber) %> |
+<%= link_to 'Back', contas_receber_index_path %>

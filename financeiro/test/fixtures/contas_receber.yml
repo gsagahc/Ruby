@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_fornecedor: 1
+  valor: 9.99
+  data: 2017-12-17
+  vencimento: 2017-12-17
+  obs: MyString
+  data_pago: 2017-12-17
+
+two:
+  id_fornecedor: 1
+  valor: 9.99
+  data: 2017-12-17
+  vencimento: 2017-12-17
+  obs: MyString
+  data_pago: 2017-12-17
