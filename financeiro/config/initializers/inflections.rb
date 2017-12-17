@@ -59,7 +59,7 @@ ActiveSupport::Inflector.inflections do |inflect|
     inflect.singular(/^(g|)ases$/i,  '\1ás')
   
     # Incontáveis
-    inflect.uncountable %w( tórax tênis ônibus lápis fênix )
+    inflect.uncountable %w( tórax tênis ônibus lápis fênix pagar contas_pagar)
   
     # Irregulares
     inflect.irregular "país", "países"

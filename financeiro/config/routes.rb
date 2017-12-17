@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :contas_pagar
+  resources :contas_pagar
+  resources :contas_pagares
+  resources :contas_pagares
+  resources :contas_pagares
+  resources :fornecedores
   resources :clientes
   resources :clientes
   # The priority is based upon order of creation: first created -> highest priority.
