@@ -2,7 +2,7 @@
 
 one:
   nome: MyString
-  cnpj-cpf: MyString
+  cnpj_cpf: MyString
   comissao_a_prazo: 9.99
   endereco: MyString
   site: MyString
@@ -12,7 +12,7 @@ one:
 
 two:
   nome: MyString
-  cnpj-cpf: MyString
+  cnpj_cpf: MyString
   comissao_a_prazo: 9.99
   endereco: MyString
   site: MyString

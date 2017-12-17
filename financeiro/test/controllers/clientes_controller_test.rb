@@ -18,7 +18,7 @@ class ClientesControllerTest < ActionController::TestCase
 
   test "should create cliente" do
     assert_difference('Cliente.count') do
-      post :create, cliente: { celular: @cliente.celular, cnpj-cpf: @cliente.cnpj-cpf, comissao_a_prazo: @cliente.comissao_a_prazo, endereco: @cliente.endereco, fone: @cliente.fone, nome: @cliente.nome, razao_social: @cliente.razao_social, site: @cliente.site }
+      post :create, cliente: { celular: @cliente.celular, cnpj_cpf: @cliente.cnpj_cpf, comissao_a_prazo: @cliente.comissao_a_prazo, endereco: @cliente.endereco, fone: @cliente.fone, nome: @cliente.nome, razao_social: @cliente.razao_social, site: @cliente.site }
     end
 
     assert_redirected_to cliente_path(assigns(:cliente))
@@ -35,7 +35,7 @@ class ClientesControllerTest < ActionController::TestCase
   end
 
   test "should update cliente" do
-    patch :update, id: @cliente, cliente: { celular: @cliente.celular, cnpj-cpf: @cliente.cnpj-cpf, comissao_a_prazo: @cliente.comissao_a_prazo, endereco: @cliente.endereco, fone: @cliente.fone, nome: @cliente.nome, razao_social: @cliente.razao_social, site: @cliente.site }
+    patch :update, id: @cliente, cliente: { celular: @cliente.celular, cnpj_cpf: @cliente.cnpj_cpf, comissao_a_prazo: @cliente.comissao_a_prazo, endereco: @cliente.endereco, fone: @cliente.fone, nome: @cliente.nome, razao_social: @cliente.razao_social, site: @cliente.site }
     assert_redirected_to cliente_path(assigns(:cliente))
   end
 
