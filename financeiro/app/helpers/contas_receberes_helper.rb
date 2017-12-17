@@ -1,0 +1,2 @@
+module ContasReceberesHelper
+end
