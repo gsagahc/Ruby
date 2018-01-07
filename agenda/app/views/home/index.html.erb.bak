@@ -1,0 +1,11 @@
+<html>
+  <head>
+  </head>
+  <body># encoding:UTF-8
+    <h1>Aplicação para cadastro de agenda</h1>
+    <p><a href="http://localhost:3000/kinds">Tipos</a></p>
+    <p><a href="http://localhost:3000/contacts">Contatos</a></p>
+    <p><a href="http://localhost:3000/addresses">Endereços</a></p>
+    <p><a href="http://localhost:3000/phones">Telefone</a></p>
+  </body>
+</html>
